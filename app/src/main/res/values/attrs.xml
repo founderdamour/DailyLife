@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="HActionBar">
+        <attr name="text_left" format="reference|string"/>
+        <attr name="text_2nd_left" format="reference|string"/>
+        <attr name="text_right" format="reference|string"/>
+        <attr name="text_title" format="reference|string"/>
+        <attr name="titleTxColor" format="reference"/>
+        <attr name="text_right_color" format="color"/>
+        <attr name="mBackground" format="reference"/>
+        <attr name="statusBarEnable" format="boolean"/>
+        <attr name="statusBarBg" format="reference"/>
+        <attr name="srcRight" format="reference"/>
+        <attr name="srcLeft" format="reference"/>
+        <attr name="src2NdLeft" format="reference"/>
+        <attr name="srcTitle" format="reference"/>
+        <attr name="function">
+            <flag name="text_left" value="1"/>
+            <flag name="text_right" value="2"/>
+            <flag name="text_title" value="4"/>
+            <flag name="button_left" value="8"/>
+            <flag name="button_right" value="16"/>
+            <flag name="button_title" value="32"/>
+            <flag name="progressbar_title" value="64"/>
+            <flag name="button_2nd_left" value="128"/>
+            <flag name="text_2nd_left" value="256"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ItemView">
+        <attr name="icon" format="reference"/>
+        <attr name="title" format="string"/>
+        <attr name="content" format="string"/>
+        <attr name="contentcolor" format="color"/>
+        <attr name="arrowvisiable" format="boolean"/>
+        <attr name="cutlinevisiable" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="custom_timer_view">
+        <attr name="radius" format="dimension"/>
+    </declare-styleable>
+
+</resources>

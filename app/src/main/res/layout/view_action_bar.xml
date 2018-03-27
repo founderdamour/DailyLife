@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <cn.zrc.dailylife.view.MyStatusBar
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/status_bar_bg"/>
+
+    <RelativeLayout
+        android:id="@+id/action_bar_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/health_actionbar_height">
+
+
+        <ImageView
+            android:id="@+id/action_bar_left_btn"
+            android:layout_width="@dimen/health_actionbar_height"
+            android:layout_height="@dimen/health_actionbar_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="center"/>
+
+        <ImageView
+            android:id="@+id/action_bar_left_2nd_btn"
+            android:layout_width="@dimen/health_actionbar_height"
+            android:layout_height="@dimen/health_actionbar_height"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/action_bar_left_btn"
+            android:layout_toRightOf="@id/action_bar_left_btn"
+            android:contentDescription="@string/app_name"
+            android:scaleType="center"/>
+
+        <ImageView
+            android:id="@+id/action_bar_right_btn"
+            android:layout_width="@dimen/health_actionbar_height"
+            android:layout_height="@dimen/health_actionbar_height"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="center"/>
+
+        <ImageView
+            android:id="@+id/action_bar_title_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"/>
+
+        <TextView
+            android:id="@+id/action_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="55dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <cn.zrc.dailylife.view.ActionBarTextView
+            android:id="@+id/action_bar_left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="15.5sp"/>
+
+        <cn.zrc.dailylife.view.ActionBarTextView
+            android:id="@+id/action_bar_left_2nd_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@id/action_bar_left_btn"
+            android:layout_toRightOf="@id/action_bar_left_btn"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="15.5sp"/>
+
+        <cn.zrc.dailylife.view.ActionBarTextView
+            android:id="@+id/action_bar_right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="15.5sp"/>
+
+        <ProgressBar
+            android:id="@+id/action_bar_progress_bar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@+id/action_bar_title"
+            android:layout_alignStart="@+id/action_bar_title"
+            android:layout_centerVertical="true"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@drawable/refresh_progress_draw"
+            android:minHeight="20dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

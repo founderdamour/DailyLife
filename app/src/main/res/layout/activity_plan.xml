@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.zrc.dailylife.view.HActionBar
+        android:id="@+id/top_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:function="button_left|text_title|text_right"
+        app:text_right="已完成"
+        app:text_title="计划"/>
+
+    <ListView
+        android:id="@+id/plan_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_bar"
+        android:divider="@color/line"
+        android:dividerHeight="@dimen/line_size"
+        android:listSelector="@null"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add_plan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加计划"
+            android:textColor="@color/black"
+            android:textSize="25sp"/>
+
+        <Button
+            android:id="@+id/look"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginStart="80dp"
+            android:text="围观"
+            android:textColor="@color/black"
+            android:textSize="25sp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

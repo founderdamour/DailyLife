@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">日常生活</string>
+    <string name="login_account">账号</string>
+    <string name="login_pwd">密码</string>
+    <string name="login">登录</string>
+    <string name="register">立即注册</string>
+    <string name="forget_pwd">忘记密码</string>
+    <string name="tab_home">首页</string>
+    <string name="tab_user_info">个人信息</string>
+    <string name="tab_micro_sleep">微睡眠</string>
+    <string name="exit_application">再按一次退出应用</string>
+
+    <string name="account_manager">账号管理</string>
+    <string name="modify_pwd">修改密码</string>
+    <string name="contact_us">联系我们</string>
+    <string name="exit_account">退出登录</string>
+
+</resources>

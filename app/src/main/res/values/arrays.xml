@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="unfinished_plan">
+        <item>背50个英语单词|需签到30天|10</item>
+        <item>学数学4个小时|需签到30天|8</item>
+        <item>学数学4个小时|需签到30天|7</item>
+        <item>学专业课4个小时|需签到30天|7</item>
+        <item>学专业课4个小时|需签到30天|7</item>
+        <item>看书一个小时|需签到30天|7</item>
+        <item>做仰卧起坐30个|需签到30天|7</item>
+    </string-array>
+
+    <string-array name="finished_plan">
+        <item>学托福3个小时</item>
+        <item>学雅思3个小时</item>
+        <item>做俯卧撑30个</item>
+        <item>操场跑6圈</item>
+    </string-array>
+
+</resources>

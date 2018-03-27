@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:customtimerview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.zrc.dailylife.view.HActionBar
+        android:id="@+id/top_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:function="button_left|text_title"
+        app:text_title="科学小盹"/>
+
+    <RelativeLayout
+        android:id="@+id/time_down"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@id/top_bar">
+
+        <cn.zrc.dailylife.view.CircleTimerView
+            android:id="@+id/timer_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            customtimerview:radius="70dp"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            tools:text="1800秒"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_down"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/music_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ChenDjoy-「3D雷雨助眠」Good Night Lullaby"/>
+
+        <Button
+            android:id="@+id/music_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Echoes of Nature - Ocean waves"/>
+
+        <Button
+            android:id="@+id/music_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="植地雅哉 - 无想"/>
+    </LinearLayout>
+
+</RelativeLayout>

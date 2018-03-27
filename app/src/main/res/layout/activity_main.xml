@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.zrc.dailylife.view.DragLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drag_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/login"/>
+
+        <ListView
+            android:id="@+id/lv_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:listSelector="@android:color/transparent"/>
+
+    </LinearLayout>
+
+
+    <cn.zrc.dailylife.view.InterceptTouchEventLinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/tab_btns_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_bottom"
+                android:gravity="center_vertical"
+                android:minHeight="53.3dp"
+                android:orientation="horizontal">
+
+                <cn.zrc.dailylife.view.TabItemView
+                    android:id="@+id/tab_home"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:itemImage="@drawable/ic_tab_msg_normal"
+                    app:itemImageSelected="@drawable/ic_tab_msg_press"
+                    app:itemText="@string/tab_home"/>
+
+                <cn.zrc.dailylife.view.TabItemView
+                    android:id="@+id/tab_micro_sleep"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:itemImage="@drawable/ic_tab_msg_normal"
+                    app:itemImageSelected="@drawable/ic_tab_msg_press"
+                    app:itemText="@string/tab_micro_sleep"/>
+
+                <cn.zrc.dailylife.view.TabItemView
+                    android:id="@+id/tab_user"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:itemImage="@drawable/ic_tab_msg_normal"
+                    app:itemImageSelected="@drawable/ic_tab_msg_press"
+                    app:itemText="@string/tab_user_info"/>
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/tab_btns_container"/>
+
+        </RelativeLayout>
+
+
+    </cn.zrc.dailylife.view.InterceptTouchEventLinearLayout>
+
+
+</cn.zrc.dailylife.view.DragLayout>
+
