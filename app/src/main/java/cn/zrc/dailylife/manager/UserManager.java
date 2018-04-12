@@ -7,6 +7,7 @@ import org.json.JSONObject;
 
 import cn.zrc.dailylife.app.App;
 import cn.zrc.dailylife.app.BaseManager;
+import cn.zrc.dailylife.entity.AccountInfo;
 import cn.zrc.dailylife.util.json.JsonHelper;
 
 /**
